@@ -2,12 +2,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Segoe UI', sans-serif;
+font-family:'Segoe UI',sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#020617,#020617,#071028);
+background:linear-gradient(135deg,#020617,#071028);
 color:white;
 }
 
@@ -43,10 +43,6 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:100px 10%;
-}
-
-.hero-left{
-max-width:500px;
 }
 
 .hero span{
@@ -95,7 +91,7 @@ width:300px;
 border-radius:50%;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section{
 padding:100px 10%;
 }
@@ -111,7 +107,7 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
-/* GLASS SKILLS */
+/* GLASS */
 .glass{
 background:rgba(255,255,255,0.05);
 padding:30px;
@@ -138,14 +134,34 @@ transition:.3s;
 transform:translateY(-10px);
 }
 
-/* ✅ IMAGE FIX — NO CROPPING */
+/* IMAGE FIX */
 .project img{
 width:100%;
 height:250px;
-object-fit:contain; /* THIS FIXES CROPPING */
+object-fit:contain;
 background:#020617;
 border-radius:10px;
 margin-bottom:15px;
+}
+
+/* CERTIFICATES */
+.certificate{
+display:flex;
+align-items:center;
+justify-content:center;
+height:120px;
+border-radius:12px;
+background:#0b1220;
+text-decoration:none;
+color:white;
+font-weight:600;
+font-size:18px;
+transition:.3s;
+}
+
+.certificate:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(56,189,248,.3);
 }
 
 /* CONTACT */
